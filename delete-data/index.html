@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Vetri Tamil Calendar</title>
+  <!-- Developer: AARA Solutions | Support: aara.apps.support@gmail.com -->
+  <style>
+    /* ── Reset & base ───────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --saffron:   #E07B39;
+      --deep-red:  #8B1A1A;
+      --gold:      #C9921A;
+      --cream:     #FDF6EC;
+      --warm-gray: #6B5E52;
+      --text:      #2C2116;
+      --muted:     #7A6A5A;
+      --border:    #E8D9C8;
+      --shadow:    rgba(139,26,26,0.08);
+      --radius:    10px;
+      --max-w:     820px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    /* ── Header ─────────────────────────────────────────────────── */
+    header {
+      background: linear-gradient(135deg, var(--deep-red) 0%, #B22222 50%, var(--saffron) 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .Om {
+      font-size: 2.8rem;
+      line-height: 1;
+      margin-bottom: 12px;
+      opacity: 0.92;
+    }
+
+    header h1 {
+      font-size: clamp(1.5rem, 5vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+
+    header .subtitle {
+      font-size: 1.05rem;
+      opacity: 0.85;
+      font-weight: 400;
+    }
+
+    header .updated {
+      display: inline-block;
+      margin-top: 18px;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 20px;
+      padding: 4px 16px;
+      font-size: 0.85rem;
+      letter-spacing: 0.3px;
+    }
+
+    /* ── Layout ─────────────────────────────────────────────────── */
+    main {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+
+    /* ── TOC ────────────────────────────────────────────────────── */
+    .toc {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--saffron);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 12px var(--shadow);
+    }
+
+    .toc h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--deep-red);
+      margin-bottom: 14px;
+    }
+
+    .toc ol {
+      padding-left: 20px;
+      columns: 2;
+      column-gap: 24px;
+    }
+
+    @media (max-width: 520px) { .toc ol { columns: 1; } }
+
+    .toc li { margin-bottom: 6px; }
+
+    .toc a {
+      color: var(--saffron);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 500;
+    }
+    .toc a:hover { color: var(--deep-red); text-decoration: underline; }
+
+    /* ── Sections ───────────────────────────────────────────────── */
+    section {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 36px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 12px var(--shadow);
+    }
+
+    @media (max-width: 600px) { section { padding: 24px 20px; } }
+
+    section h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--deep-red);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    section h2 .icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    section h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--saffron);
+      margin: 22px 0 10px;
+    }
+
+    p { margin-bottom: 14px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    li { margin-bottom: 6px; }
+
+    /* ── Highlight box ──────────────────────────────────────────── */
+    .highlight {
+      background: linear-gradient(135deg, #FFF8EE, #FFF3E3);
+      border: 1px solid #F0C98A;
+      border-left: 4px solid var(--gold);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+
+    .highlight strong { color: var(--deep-red); }
+
+    /* ── Badge pills ────────────────────────────────────────────── */
+    .badge {
+      display: inline-block;
+      background: var(--cream);
+      border: 1px solid var(--border);
+      color: var(--warm-gray);
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin: 3px 3px 3px 0;
+    }
+
+    /* ── Table ──────────────────────────────────────────────────── */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.92rem;
+    }
+
+    .data-table th {
+      background: var(--deep-red);
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.3px;
+    }
+
+    .data-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:nth-child(even) td { background: #FAFAF8; }
+
+    @media (max-width: 600px) {
+      .data-table, .data-table thead, .data-table tbody,
+      .data-table th, .data-table td, .data-table tr { display: block; }
+      .data-table thead tr { display: none; }
+      .data-table td { padding: 8px 12px; }
+      .data-table td::before {
+        content: attr(data-label);
+        font-weight: 700;
+        color: var(--deep-red);
+        display: block;
+        font-size: 0.8rem;
+        margin-bottom: 2px;
+      }
+    }
+
+    /* ── Contact card ───────────────────────────────────────────── */
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: linear-gradient(135deg, var(--deep-red), #B22222);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+
+    .contact-card .icon { font-size: 2rem; flex-shrink: 0; }
+
+    .contact-card a {
+      color: #FFD699;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* ── Footer ─────────────────────────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+
+    footer a { color: var(--saffron); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ── Anchor offset for sticky nav (if ever added) ───────────── */
+    [id] { scroll-margin-top: 24px; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════════
+     HEADER
+═══════════════════════════════════════════════════════════════ -->
+<header>
+  <div class="Om">🕉</div>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Vetri Tamil Calendar</p>
+  <span class="updated">Last Updated: May 25, 2026</span>
+</header>
+
+<!-- ══════════════════════════════════════════════════════════════
+     MAIN CONTENT
+═══════════════════════════════════════════════════════════════ -->
+<main>
+
+  <!-- TABLE OF CONTENTS -->
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-collected">Data We Collect</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#analytics">Analytics &amp; Diagnostics</a></li>
+      <li><a href="#advertising">Advertising (AdMob)</a></li>
+      <li><a href="#subscriptions">Subscriptions &amp; Billing</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#data-sharing">Data Sharing</a></li>
+      <li><a href="#data-security">Data Security</a></li>
+      <li><a href="#user-rights">Your Rights</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#changes">Policy Changes</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <!-- ── 1. OVERVIEW ─────────────────────────────────────────── -->
+  <section id="overview">
+    <h2><span class="icon">📜</span> Overview</h2>
+    <p>
+      This Privacy Policy describes how <strong>AARA Solutions</strong> ("we", "us", or "our")
+      collects, uses, and protects information when you use the
+      <strong>Vetri Tamil Calendar</strong> Android application ("the App").
+    </p>
+    <p>
+      Vetri Tamil Calendar is a Tamil Panchangam, spiritual, and devotional app offering Tamil
+      calendar data, daily astrology, Nalla Neram, Jathagam calculations, devotional lyrics,
+      God stories, gold &amp; silver rates, home-screen widgets, push notifications, and optional
+      premium subscription features.
+    </p>
+    <div class="highlight">
+      <strong>Plain-language summary:</strong> We collect only the data necessary to operate the
+      App's features. We do not sell your personal data. Advertising is provided by Google AdMob
+      and can be removed by purchasing a premium subscription.
+    </div>
+    <p>
+      By using the App you agree to the practices described in this policy. If you do not agree,
+      please uninstall the App and discontinue use.
+    </p>
+  </section>
+
+  <!-- ── 2. DATA COLLECTED ────────────────────────────────────── -->
+  <section id="data-collected">
+    <h2><span class="icon">📊</span> Data We Collect</h2>
+    <p>
+      We collect information in the following categories. Much of this data is collected
+      automatically by third-party SDKs integrated into the App and is subject to those
+      services' own privacy policies (see <a href="#third-party">Third-Party Services</a>).
+    </p>
+
+    <table class="data-table" aria-label="Data collection summary">
+      <thead>
+        <tr>
+          <th>Data Type</th>
+          <th>Purpose</th>
+          <th>Collected By</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Data Type">Device identifiers (Android Advertising ID)</td>
+          <td data-label="Purpose">Personalised / non-personalised advertising</td>
+          <td data-label="Collected By">Google AdMob</td>
+        </tr>
+        <tr>
+          <td data-label="Data Type">App usage events (screens viewed, features tapped)</td>
+          <td data-label="Purpose">Understand feature popularity, improve UX</td>
+          <td data-label="Collected By">Firebase Analytics</td>
+        </tr>
+        <tr>
+          <td data-label="Data Type">Crash reports, stack traces, device model &amp; OS</td>
+          <td data-label="Purpose">Detect and fix app crashes</td>
+          <td data-label="Collected By">Firebase Crashlytics</td>
+        </tr>
+        <tr>
+          <td data-label="Data Type">Purchase receipts, subscription status, anonymous customer ID</td>
+          <td data-label="Purpose">Verify and manage premium entitlements</td>
+          <td data-label="Collected By">RevenueCat / Google Play Billing</td>
+        </tr>
+        <tr>
+          <td data-label="Data Type">Device GPS / network location (optional, user-granted)</td>
+          <td data-label="Purpose">Accurate sunrise/sunset and Panchangam calculations</td>
+          <td data-label="Collected By">App only (not transmitted)</td>
+        </tr>
+        <tr>
+          <td data-label="Data Type">Notification preferences</td>
+          <td data-label="Purpose">Deliver daily Panchangam and event reminders</td>
+          <td data-label="Collected By">Stored locally on device</td>
+        </tr>
+        <tr>
+          <td data-label="Data Type">Bookmarks &amp; favourites</td>
+          <td data-label="Purpose">Restore saved content across sessions</td>
+          <td data-label="Collected By">Stored locally on device</td>
+        </tr>
+        <tr>
+          <td data-label="Data Type">Remote config flags</td>
+          <td data-label="Purpose">Feature toggles, A/B tests</td>
+          <td data-label="Collected By">Firebase Remote Config</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Data We Do NOT Collect</h3>
+    <ul>
+      <li>Your name, email address, or account credentials</li>
+      <li>Phone numbers or contact lists</li>
+      <li>Photos, camera, or microphone input</li>
+      <li>Financial details (payments are handled entirely by Google Play)</li>
+      <li>Precise location without your explicit permission</li>
+    </ul>
+  </section>
+
+  <!-- ── 3. LOCATION ─────────────────────────────────────────── -->
+  <section id="location">
+    <h2><span class="icon">📍</span> Location Data</h2>
+    <p>
+      Vetri Tamil Calendar may request access to your device's location
+      (<code>ACCESS_FINE_LOCATION</code> or <code>ACCESS_COARSE_LOCATION</code>) solely to
+      improve the accuracy of the following features:
+    </p>
+    <ul>
+      <li>Sunrise and sunset times</li>
+      <li>Panchangam (Tithi, Nakshatra, Yoga, Karana) calculations</li>
+      <li>Rahu Kalam and Yamagandam timings</li>
+      <li>Nalla Neram (auspicious time) display</li>
+    </ul>
+    <div class="highlight">
+      <strong>Location permission is entirely optional.</strong> You may deny the permission
+      when prompted; the App will fall back to a default location or time-zone-based
+      calculation. You can revoke the permission at any time in your device's
+      Settings → Apps → Vetri Tamil Calendar → Permissions.
+    </div>
+    <p>
+      Location data is used only on-device for the calculations described above. It is
+      <strong>not</strong> transmitted to our servers, stored in any database, or shared with
+      third parties in any identifiable form.
+    </p>
+  </section>
+
+  <!-- ── 4. ANALYTICS & DIAGNOSTICS ─────────────────────────── -->
+  <section id="analytics">
+    <h2><span class="icon">📈</span> Analytics &amp; Diagnostics</h2>
+
+    <h3>Firebase Analytics (Google LLC)</h3>
+    <p>
+      We use Google Firebase Analytics to collect anonymised, aggregated data about how
+      users interact with the App — for example, which screens are visited most often and
+      which features are used. This helps us prioritise improvements and new features.
+    </p>
+    <p>
+      Firebase Analytics may collect: device type, operating system version, app version,
+      country (derived from IP address, not stored), session duration, and in-app events
+      (e.g., "viewed daily Panchangam", "opened lyrics"). IP addresses are anonymised by
+      Google before storage.
+    </p>
+    <p>
+      Firebase Analytics privacy policy:
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+        firebase.google.com/support/privacy
+      </a>
+    </p>
+
+    <h3>Firebase Crashlytics (Google LLC)</h3>
+    <p>
+      We use Firebase Crashlytics to automatically detect, record, and report app crashes
+      and non-fatal errors. Crash reports contain: stack traces, device model, OS version,
+      app version, and a randomly generated installation identifier. Crash reports
+      <strong>do not</strong> contain your name, email, or any personally identifiable
+      information beyond what is inherent to the device state at the time of the crash.
+    </p>
+    <p>
+      Crash data is used exclusively to find and fix bugs. It is not used for advertising
+      or shared with third parties outside of Google Firebase's infrastructure.
+    </p>
+    <p>
+      Crashlytics privacy policy:
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+        firebase.google.com/support/privacy
+      </a>
+    </p>
+
+    <h3>Firebase Remote Config</h3>
+    <p>
+      Firebase Remote Config allows us to adjust app behaviour (e.g., enable or disable
+      features) without requiring a full app update. No personal data is collected through
+      Remote Config beyond the standard Firebase installation identifier.
+    </p>
+  </section>
+
+  <!-- ── 5. ADVERTISING ──────────────────────────────────────── -->
+  <section id="advertising">
+    <h2><span class="icon">📣</span> Advertising – Google AdMob</h2>
+    <p>
+      Vetri Tamil Calendar displays advertisements provided by
+      <strong>Google AdMob</strong> (Google LLC) to free-tier users. AdMob may use
+      device identifiers, including the Android Advertising ID (AAID), to show
+      interest-based (personalised) ads.
+    </p>
+
+    <h3>What AdMob may collect</h3>
+    <ul>
+      <li>Android Advertising ID (AAID)</li>
+      <li>Device information (model, OS, language, time zone)</li>
+      <li>IP address (used to infer approximate location for ad targeting)</li>
+      <li>Ad interaction data (impressions, clicks)</li>
+    </ul>
+
+    <h3>Your advertising choices</h3>
+    <ul>
+      <li>
+        <strong>Opt out of personalised ads:</strong> Go to your device Settings →
+        Google → Ads → "Opt out of Ads Personalization".
+      </li>
+      <li>
+        <strong>Reset your Advertising ID</strong> in the same menu.
+      </li>
+      <li>
+        <strong>Remove ads entirely</strong> by upgrading to a Vetri Tamil Calendar
+        premium subscription (see <a href="#subscriptions">Subscriptions</a>).
+      </li>
+    </ul>
+
+    <p>
+      AdMob / Google privacy policy:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+        policies.google.com/privacy
+      </a>
+    </p>
+  </section>
+
+  <!-- ── 6. SUBSCRIPTIONS & BILLING ──────────────────────────── -->
+  <section id="subscriptions">
+    <h2><span class="icon">💳</span> In-App Subscriptions &amp; Billing</h2>
+    <p>
+      Vetri Tamil Calendar offers optional premium subscriptions ("Vetri Tamil Calendar Pro")
+      that unlock ad-free usage and additional features. Subscription plans may include
+      monthly, annual, and lifetime options.
+    </p>
+
+    <h3>Google Play Billing</h3>
+    <p>
+      All purchases are processed through <strong>Google Play Billing</strong>. We do not
+      collect, process, or store payment card details. Your payment information is handled
+      exclusively by Google in accordance with Google Play's terms of service. Subscriptions
+      auto-renew unless cancelled at least 24 hours before the end of the current billing
+      period.
+    </p>
+    <p>
+      To manage or cancel a subscription: open the Google Play Store app →
+      Menu → Subscriptions → Vetri Tamil Calendar → Cancel.
+    </p>
+
+    <h3>RevenueCat</h3>
+    <p>
+      We use <strong>RevenueCat</strong> to manage subscription entitlement verification
+      across devices. RevenueCat receives a purchase receipt from Google Play and an
+      anonymous customer identifier generated by the RevenueCat SDK. RevenueCat does
+      <strong>not</strong> receive your Google account name, payment card details, or any
+      directly identifying personal information.
+    </p>
+    <p>
+      The anonymous identifier allows the App to verify your premium status on reinstall or
+      device changes without requiring a separate account.
+    </p>
+    <p>
+      RevenueCat privacy policy:
+      <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">
+        revenuecat.com/privacy
+      </a>
+    </p>
+
+    <h3>Refunds</h3>
+    <p>
+      Refund requests must be submitted directly to Google Play. We are not able to process
+      refunds ourselves as all billing is managed by Google.
+    </p>
+  </section>
+
+  <!-- ── 7. THIRD-PARTY SERVICES ─────────────────────────────── -->
+  <section id="third-party">
+    <h2><span class="icon">🔗</span> Third-Party Services</h2>
+    <p>
+      The App integrates the following third-party services. Each service operates under
+      its own privacy policy. We encourage you to review those policies.
+    </p>
+
+    <table class="data-table" aria-label="Third-party services">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Provider</th>
+          <th>Purpose</th>
+          <th>Privacy Policy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Service">Firebase Analytics</td>
+          <td data-label="Provider">Google LLC</td>
+          <td data-label="Purpose">Usage analytics</td>
+          <td data-label="Privacy Policy">
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Link</a>
+          </td>
+        </tr>
+        <tr>
+          <td data-label="Service">Firebase Crashlytics</td>
+          <td data-label="Provider">Google LLC</td>
+          <td data-label="Purpose">Crash reporting</td>
+          <td data-label="Privacy Policy">
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Link</a>
+          </td>
+        </tr>
+        <tr>
+          <td data-label="Service">Firebase Remote Config</td>
+          <td data-label="Provider">Google LLC</td>
+          <td data-label="Purpose">Feature configuration</td>
+          <td data-label="Privacy Policy">
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Link</a>
+          </td>
+        </tr>
+        <tr>
+          <td data-label="Service">Google AdMob</td>
+          <td data-label="Provider">Google LLC</td>
+          <td data-label="Purpose">In-app advertising</td>
+          <td data-label="Privacy Policy">
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Link</a>
+          </td>
+        </tr>
+        <tr>
+          <td data-label="Service">Google Play Billing</td>
+          <td data-label="Provider">Google LLC</td>
+          <td data-label="Purpose">In-app purchases</td>
+          <td data-label="Privacy Policy">
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Link</a>
+          </td>
+        </tr>
+        <tr>
+          <td data-label="Service">RevenueCat</td>
+          <td data-label="Provider">RevenueCat Inc.</td>
+          <td data-label="Purpose">Subscription management</td>
+          <td data-label="Privacy Policy">
+            <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Link</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <span class="badge">Firebase Analytics</span>
+    <span class="badge">Firebase Crashlytics</span>
+    <span class="badge">Firebase Remote Config</span>
+    <span class="badge">Google AdMob</span>
+    <span class="badge">Google Play Billing</span>
+    <span class="badge">RevenueCat</span>
+  </section>
+
+  <!-- ── 8. DATA SHARING ─────────────────────────────────────── -->
+  <section id="data-sharing">
+    <h2><span class="icon">🤝</span> Data Sharing &amp; Disclosure</h2>
+    <p>We do not sell, rent, or trade your personal information.</p>
+    <p>We may share data only in the following limited circumstances:</p>
+    <ul>
+      <li>
+        <strong>Third-party service providers:</strong> As described in this policy, data
+        flows to Google (Firebase, AdMob, Play Billing) and RevenueCat solely to operate
+        the App's features.
+      </li>
+      <li>
+        <strong>Legal compliance:</strong> We may disclose information if required by law,
+        court order, or to protect the rights and safety of users or the public.
+      </li>
+      <li>
+        <strong>Business transfer:</strong> If the App is acquired or merged, user data may
+        be transferred as part of that transaction. We will notify users via an in-app notice
+        or updated privacy policy.
+      </li>
+    </ul>
+    <p>
+      Beyond these cases, we do not disclose information about individual users to any
+      third party without explicit consent.
+    </p>
+  </section>
+
+  <!-- ── 9. DATA SECURITY ─────────────────────────────────────── -->
+  <section id="data-security">
+    <h2><span class="icon">🔒</span> Data Security</h2>
+    <p>
+      We take reasonable technical and organisational measures to protect the data processed
+      through the App:
+    </p>
+    <ul>
+      <li>All network communication uses HTTPS / TLS encryption.</li>
+      <li>
+        User preferences and bookmarks are stored locally on-device using Android's
+        SharedPreferences and Hive database, which are sandboxed to the App.
+      </li>
+      <li>
+        Firebase and RevenueCat services implement their own security controls as described
+        in their respective security documentation.
+      </li>
+      <li>We do not store financial data; all payments are handled by Google Play.</li>
+    </ul>
+    <p>
+      While we strive to use commercially acceptable means to protect your information, no
+      method of transmission or storage is 100% secure. We cannot guarantee absolute security.
+    </p>
+  </section>
+
+  <!-- ── 10. USER RIGHTS ─────────────────────────────────────── -->
+  <section id="user-rights">
+    <h2><span class="icon">⚖️</span> Your Privacy Rights</h2>
+    <p>
+      Depending on your jurisdiction, you may have the following rights regarding your data:
+    </p>
+    <ul>
+      <li><strong>Access:</strong> Request a description of the data we hold about you.</li>
+      <li><strong>Deletion:</strong> Request deletion of data associated with your device.</li>
+      <li>
+        <strong>Opt-out of personalised advertising:</strong> Via device Settings →
+        Google → Ads.
+      </li>
+      <li>
+        <strong>Revoke location permission:</strong> Via device Settings → Apps →
+        Vetri Tamil Calendar → Permissions.
+      </li>
+      <li>
+        <strong>Manage analytics:</strong> Firebase Analytics collection can be disabled
+        by opting out of Google's data collection in your Google account settings.
+      </li>
+    </ul>
+    <p>
+      To exercise data access or deletion rights, please contact us at
+      <a href="mailto:aara.apps.support@gmail.com">aara.apps.support@gmail.com</a>.
+      We will respond within 30 days. Note that data processed solely by Google or RevenueCat
+      must be requested directly from those providers.
+    </p>
+
+    <h3>California Residents (CCPA)</h3>
+    <p>
+      If you are a California resident, you have additional rights under the California
+      Consumer Privacy Act, including the right to know what personal information is
+      collected and the right to opt out of its sale. We do not sell personal information.
+      To submit a CCPA request, contact us using the details in <a href="#contact">Contact Us</a>.
+    </p>
+
+    <h3>European / UK Residents (GDPR / UK GDPR)</h3>
+    <p>
+      If you are located in the European Economic Area or the United Kingdom, our lawful
+      basis for processing analytics and crash data is our <em>legitimate interest</em> in
+      maintaining a stable, high-quality application. Advertising processing by Google AdMob
+      is based on your <em>consent</em> (managed through device-level Ad personalisation
+      settings). You have the right to object, restrict processing, or request erasure by
+      contacting us.
+    </p>
+  </section>
+
+  <!-- ── 11. CHILDREN'S PRIVACY ──────────────────────────────── -->
+  <section id="children">
+    <h2><span class="icon">👶</span> Children's Privacy</h2>
+    <p>
+      Vetri Tamil Calendar is <strong>not directed toward children under the age of 13</strong>
+      (or 16 in certain jurisdictions). We do not knowingly collect personal information from
+      children under 13. If you believe your child has provided personal information through
+      the App, please contact us at
+      <a href="mailto:aara.apps.support@gmail.com">aara.apps.support@gmail.com</a>
+      and we will promptly take steps to delete such information.
+    </p>
+    <p>
+      The App's content — Panchangam data, devotional lyrics, and astrological information —
+      is intended for general adult audiences interested in Tamil spiritual and cultural
+      traditions.
+    </p>
+  </section>
+
+  <!-- ── 12. POLICY CHANGES ───────────────────────────────────── -->
+  <section id="changes">
+    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy periodically to reflect changes in the App's
+      features, applicable law, or third-party service integrations. When we make material
+      changes, we will:
+    </p>
+    <ul>
+      <li>Update the "Last Updated" date at the top of this page.</li>
+      <li>Display an in-app notification on the next App launch after the update.</li>
+    </ul>
+    <p>
+      We encourage you to review this policy whenever you update the App. Continued use of
+      the App after a policy change constitutes acceptance of the revised policy.
+    </p>
+  </section>
+
+  <!-- ── 13. CONTACT ─────────────────────────────────────────── -->
+  <section id="contact">
+    <h2><span class="icon">✉️</span> Contact Us</h2>
+    <p>
+      If you have any questions or suggestions about this Privacy Policy, you may contact:
+    </p>
+
+    <div class="contact-card">
+      <div class="icon">🕉</div>
+      <div>
+        <strong>AARA Solutions</strong><br />
+        Developer of Vetri Tamil Calendar<br />
+        Email: <a href="mailto:aara.apps.support@gmail.com">aara.apps.support@gmail.com</a>
+      </div>
+    </div>
+
+    <p style="margin-top:20px; font-size:0.9rem; color:var(--muted);">
+      We aim to respond to all privacy-related enquiries within <strong>30 days</strong>.
+    </p>
+  </section>
+
+</main>
+
+<!-- ══════════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════════ -->
+<footer>
+  <p>
+    &copy; 2026 AARA Solutions. All rights reserved.
+  </p>
+  <p style="margin-top:8px;">
+    Vetri Tamil Calendar &nbsp;·&nbsp;
+    <a href="mailto:aara.apps.support@gmail.com">aara.apps.support@gmail.com</a>
+  </p>
+</footer>
+
+</body>
+</html>
