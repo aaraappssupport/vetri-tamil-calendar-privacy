@@ -1,789 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – Vetri Tamil Calendar</title>
-  <meta name="description" content="Privacy Policy for the Vetri Tamil Calendar Android app by AARA Apps." />
-  <!-- Developer: AARA Apps | Support: aara.apps.support@gmail.com -->
-  <style>
-    /* ── Reset & base ───────────────────────────────────────────── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Vetri Tamil Calendar</title>
+<meta name="description" content="Privacy Policy for the Vetri Tamil Calendar app for Android and iOS, by AARA Apps.">
+<style>
+  :root {
+    --bg: #faf6ec;
+    --card: #ffffff;
+    --text: #2b1d12;
+    --muted: #6b5a4a;
+    --accent: #8b6508;
+    --border: #e8dcc0;
+    --note-bg: #fff7df;
+  }
+  @media (prefers-color-scheme: dark) {
     :root {
-      --saffron:   #E07B39;
-      --deep-red:  #8B1A1A;
-      --gold:      #C9921A;
-      --cream:     #FDF6EC;
-      --warm-gray: #6B5E52;
-      --text:      #2C2116;
-      --muted:     #7A6A5A;
-      --border:    #E8D9C8;
-      --shadow:    rgba(139,26,26,0.08);
-      --radius:    10px;
-      --max-w:     820px;
+      --bg: #1b1712;
+      --card: #25201a;
+      --text: #f1e9da;
+      --muted: #c2b39c;
+      --accent: #e0b44c;
+      --border: #3d3428;
+      --note-bg: #2f2819;
     }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      background: var(--cream);
-      color: var(--text);
-      line-height: 1.75;
-      font-size: 16px;
-    }
-
-    /* ── Header ─────────────────────────────────────────────────── */
-    header {
-      background: linear-gradient(135deg, var(--deep-red) 0%, #B22222 50%, var(--saffron) 100%);
-      color: #fff;
-      padding: 48px 24px 40px;
-      text-align: center;
-    }
-
-    header .Om {
-      font-size: 2.8rem;
-      line-height: 1;
-      margin-bottom: 12px;
-      opacity: 0.92;
-    }
-
-    header h1 {
-      font-size: clamp(1.5rem, 5vw, 2.4rem);
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      margin-bottom: 6px;
-    }
-
-    header .subtitle {
-      font-size: 1.05rem;
-      opacity: 0.85;
-      font-weight: 400;
-    }
-
-    header .updated {
-      display: inline-block;
-      margin-top: 18px;
-      background: rgba(255,255,255,0.18);
-      border: 1px solid rgba(255,255,255,0.3);
-      border-radius: 20px;
-      padding: 4px 16px;
-      font-size: 0.85rem;
-      letter-spacing: 0.3px;
-    }
-
-    /* ── Layout ─────────────────────────────────────────────────── */
-    main {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 40px 20px 64px;
-    }
-
-    /* ── TOC ────────────────────────────────────────────────────── */
-    .toc {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--saffron);
-      border-radius: var(--radius);
-      padding: 24px 28px;
-      margin-bottom: 40px;
-      box-shadow: 0 2px 12px var(--shadow);
-    }
-
-    .toc h2 {
-      font-size: 1rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--deep-red);
-      margin-bottom: 14px;
-    }
-
-    .toc ol {
-      padding-left: 20px;
-      columns: 2;
-      column-gap: 24px;
-    }
-
-    @media (max-width: 520px) { .toc ol { columns: 1; } }
-
-    .toc li { margin-bottom: 6px; }
-
-    .toc a {
-      color: var(--saffron);
-      text-decoration: none;
-      font-size: 0.92rem;
-      font-weight: 500;
-    }
-    .toc a:hover { color: var(--deep-red); text-decoration: underline; }
-
-    /* ── Sections ───────────────────────────────────────────────── */
-    section {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 32px 36px;
-      margin-bottom: 24px;
-      box-shadow: 0 2px 12px var(--shadow);
-    }
-
-    @media (max-width: 600px) { section { padding: 24px 20px; } }
-
-    section h2 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--deep-red);
-      margin-bottom: 16px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid var(--border);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    section h2 .icon {
-      font-size: 1.3rem;
-      flex-shrink: 0;
-    }
-
-    section h3 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--saffron);
-      margin: 22px 0 10px;
-    }
-
-    p { margin-bottom: 14px; }
-    p:last-child { margin-bottom: 0; }
-
-    ul, ol {
-      padding-left: 22px;
-      margin-bottom: 14px;
-    }
-
-    li { margin-bottom: 6px; }
-
-    /* ── Highlight box ──────────────────────────────────────────── */
-    .highlight {
-      background: linear-gradient(135deg, #FFF8EE, #FFF3E3);
-      border: 1px solid #F0C98A;
-      border-left: 4px solid var(--gold);
-      border-radius: 8px;
-      padding: 16px 20px;
-      margin: 16px 0;
-      font-size: 0.95rem;
-    }
-
-    .highlight strong { color: var(--deep-red); }
-
-    /* ── Badge pills ────────────────────────────────────────────── */
-    .badge {
-      display: inline-block;
-      background: var(--cream);
-      border: 1px solid var(--border);
-      color: var(--warm-gray);
-      border-radius: 20px;
-      padding: 3px 12px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      margin: 3px 3px 3px 0;
-    }
-
-    /* ── Table ──────────────────────────────────────────────────── */
-    .data-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 16px 0;
-      font-size: 0.92rem;
-    }
-
-    .data-table th {
-      background: var(--deep-red);
-      color: #fff;
-      padding: 10px 14px;
-      text-align: left;
-      font-weight: 600;
-      font-size: 0.85rem;
-      letter-spacing: 0.3px;
-    }
-
-    .data-table td {
-      padding: 10px 14px;
-      border-bottom: 1px solid var(--border);
-      vertical-align: top;
-    }
-
-    .data-table tr:last-child td { border-bottom: none; }
-    .data-table tr:nth-child(even) td { background: #FAFAF8; }
-
-    @media (max-width: 600px) {
-      .data-table, .data-table thead, .data-table tbody,
-      .data-table th, .data-table td, .data-table tr { display: block; }
-      .data-table thead tr { display: none; }
-      .data-table td { padding: 8px 12px; }
-      .data-table td::before {
-        content: attr(data-label);
-        font-weight: 700;
-        color: var(--deep-red);
-        display: block;
-        font-size: 0.8rem;
-        margin-bottom: 2px;
-      }
-    }
-
-    /* ── Contact card ───────────────────────────────────────────── */
-    .contact-card {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      background: linear-gradient(135deg, var(--deep-red), #B22222);
-      color: #fff;
-      border-radius: var(--radius);
-      padding: 20px 24px;
-      margin-top: 16px;
-    }
-
-    .contact-card .icon { font-size: 2rem; flex-shrink: 0; }
-
-    .contact-card a {
-      color: #FFD699;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .contact-card a:hover { text-decoration: underline; }
-
-    /* ── Footer ─────────────────────────────────────────────────── */
-    footer {
-      text-align: center;
-      padding: 32px 20px;
-      color: var(--muted);
-      font-size: 0.85rem;
-      border-top: 1px solid var(--border);
-    }
-
-    footer a { color: var(--saffron); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-
-    /* ── Anchor offset for sticky nav (if ever added) ───────────── */
-    [id] { scroll-margin-top: 24px; }
-
-  </style>
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Tamil", sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { text-align: center; padding: 16px 0 8px; }
+  header .om { font-size: 40px; }
+  h1 { margin: 8px 0 4px; font-size: 30px; }
+  .app { color: var(--accent); font-weight: 600; margin: 0; }
+  .updated { color: var(--muted); font-size: 14px; margin: 4px 0 0; }
+  nav, section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  nav h2 { margin-top: 0; font-size: 18px; }
+  nav ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 24px; }
+  @media (max-width: 560px) { nav ol { columns: 1; } }
+  nav a, a { color: var(--accent); }
+  h2 { font-size: 21px; margin: 0 0 12px; }
+  h3 { font-size: 17px; margin: 18px 0 6px; }
+  .note {
+    background: var(--note-bg);
+    border-left: 4px solid var(--accent);
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin: 12px 0;
+  }
+  .platform {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 1px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    vertical-align: middle;
+    margin-left: 4px;
+    white-space: nowrap;
+  }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 600; }
+  ul { padding-left: 20px; }
+  footer { text-align: center; color: var(--muted); font-size: 14px; margin-top: 28px; }
+</style>
 </head>
 <body>
+<div class="wrap">
 
 <header>
-  <div class="Om">🕉</div>
+  <div class="om" aria-hidden="true">🕉</div>
   <h1>Privacy Policy</h1>
-  <p class="subtitle">Vetri Tamil Calendar</p>
-  <span class="updated">Last Updated: October 13, 2026</span>
+  <p class="app">Vetri Tamil Calendar</p>
+  <p class="updated">Last Updated: November 1, 2026</p>
 </header>
 
-<main>
+<nav aria-label="Contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#collect">Data We Collect</a></li>
+    <li><a href="#device">Data Kept on Your Device</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#analytics">Analytics &amp; Diagnostics</a></li>
+    <li><a href="#ads">Advertising &amp; Your Choices</a></li>
+    <li><a href="#purchases">Purchases &amp; Billing</a></li>
+    <li><a href="#network">Other Network Requests</a></li>
+    <li><a href="#third-party">Third-Party Services</a></li>
+    <li><a href="#sharing">Data Sharing</a></li>
+    <li><a href="#security">Data Security</a></li>
+    <li><a href="#rights">Your Rights &amp; Deleting Data</a></li>
+    <li><a href="#children">Children's Privacy</a></li>
+    <li><a href="#changes">Policy Changes</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ol>
+</nav>
 
-  <nav class="toc" aria-label="Table of contents">
-    <h2>Contents</h2>
-    <ol>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#data-collected">Data We Collect</a></li>
-      <li><a href="#on-device">Data Kept on Your Device</a></li>
-      <li><a href="#location">Location</a></li>
-      <li><a href="#analytics">Analytics &amp; Diagnostics</a></li>
-      <li><a href="#advertising">Advertising &amp; Your Choices</a></li>
-      <li><a href="#subscriptions">Purchases &amp; Billing</a></li>
-      <li><a href="#network">Other Network Requests</a></li>
-      <li><a href="#third-party">Third-Party Services</a></li>
-      <li><a href="#data-sharing">Data Sharing</a></li>
-      <li><a href="#data-security">Data Security</a></li>
-      <li><a href="#user-rights">Your Rights &amp; Deleting Data</a></li>
-      <li><a href="#children">Children's Privacy</a></li>
-      <li><a href="#changes">Policy Changes</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ol>
-  </nav>
+<section id="overview">
+  <h2>📜 Overview</h2>
+  <p>This Privacy Policy describes how AARA Apps ("we", "us", or "our") handles information when you use the Vetri Tamil Calendar app for Android and iOS ("the App").</p>
+  <p>Vetri Tamil Calendar is a Tamil calendar and devotional app. It offers Tamil calendar and panchangam data, Nalla Neram and daily timings, festivals and Tamil Nadu Government holidays with reminders, devotional lyrics, God stories, gold &amp; silver rates, home-screen widgets where your device supports them, and optional paid features.</p>
+  <div class="note">
+    <strong>Android app only:</strong> the Android app also includes astrology features: Rasi Palan, Jathagam (birth chart) profiles and calculations, and Porutham matching, with optional extra Jathagam profile slots. These features are <strong>not</strong> part of the iOS app. Wherever this policy mentions Jathagam, Rasi Palan, Porutham or Jathagam slots, it applies to the Android app only.
+  </div>
+  <div class="note">
+    <strong>Plain-language summary:</strong> The App has no account or sign-in, and we do not ask for your name or email. On Android, birth details you enter for Jathagam profiles stay on your device. Like most free apps, the App uses Google's advertising, analytics and crash-reporting tools, which collect device identifiers and approximate location. We do not sell your personal data. Ads can be removed with a paid plan.
+  </div>
+  <p>By using the App you agree to the practices described in this policy. If you do not agree, please uninstall the App and stop using it.</p>
+</section>
 
-  <section id="overview">
-    <h2><span class="icon">📜</span> Overview</h2>
-    <p>
-      This Privacy Policy describes how <strong>AARA Apps</strong> ("we", "us", or "our")
-      handles information when you use the <strong>Vetri Tamil Calendar</strong> Android
-      application ("the App").
-    </p>
-    <p>
-      Vetri Tamil Calendar is a Tamil Panchangam, spiritual, and devotional app offering Tamil
-      calendar data, daily astrology, Nalla Neram, Jathagam calculations and Porutham matching,
-      devotional lyrics, God stories, gold &amp; silver rates, home-screen widgets, reminders and
-      notifications, and optional paid features.
-    </p>
-    <div class="highlight">
-      <strong>Plain-language summary:</strong> The App has no account or sign-in, and we do not
-      ask for your name or email. Birth details you enter for Jathagam profiles stay on your
-      device. Like most free apps, the App uses Google's advertising, analytics and crash-reporting
-      tools, which collect device identifiers and approximate location. We do not sell your
-      personal data. Ads can be removed with a paid plan.
-    </div>
-    <p>
-      By using the App you agree to the practices described in this policy. If you do not agree,
-      please uninstall the App and stop using it.
-    </p>
-  </section>
+<section id="collect">
+  <h2>📊 Data We Collect</h2>
+  <p>Most of the data below is collected automatically by the third-party services built into the App, not by servers that we run. Each service handles the data under its own privacy policy (see <a href="#third-party">Third-Party Services</a>).</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Data type</th><th>Why</th><th>Handled by</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Device or other identifiers: the Android Advertising ID, or on iOS the Identifier for Advertisers (IDFA) only if you allow tracking, plus random app-installation identifiers</td>
+        <td>Showing ads, measuring ads, analytics, fraud prevention, keeping the App working</td>
+        <td>Google AdMob, Firebase</td>
+      </tr>
+      <tr>
+        <td>Approximate location (derived from your IP address by these services)</td>
+        <td>Ads, analytics, fraud prevention</td>
+        <td>Google AdMob, Firebase</td>
+      </tr>
+      <tr>
+        <td>App interactions (screens viewed, features used)</td>
+        <td>Understanding which features are used so we can improve them; ad measurement</td>
+        <td>Firebase Analytics, Google AdMob</td>
+      </tr>
+      <tr>
+        <td>Device and diagnostic information (device model, OS version, app version, language, time zone, performance data)</td>
+        <td>App functionality, analytics, fraud prevention</td>
+        <td>Firebase, Google AdMob</td>
+      </tr>
+      <tr>
+        <td>Crash reports (stack traces, device state at the time of a crash)</td>
+        <td>Finding and fixing crashes</td>
+        <td>Firebase Crashlytics</td>
+      </tr>
+      <tr>
+        <td>Purchase history (which plan or item you bought, subscription status) and an anonymous customer ID</td>
+        <td>Unlocking what you bought and keeping it after reinstall; purchase analytics</td>
+        <td>RevenueCat, Google Play Billing (Android) or the Apple App Store (iOS), Firebase Analytics</td>
+      </tr>
+      <tr>
+        <td>Remote configuration values</td>
+        <td>Turning features on or off without an app update</td>
+        <td>Firebase Remote Config</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
 
-  <section id="data-collected">
-    <h2><span class="icon">📊</span> Data We Collect</h2>
-    <p>
-      Most of the data below is collected automatically by the third-party services built into the
-      App, not by servers that we run. Each service handles the data under its own privacy policy
-      (see <a href="#third-party">Third-Party Services</a>).
-    </p>
+  <h3>Data We Do NOT Collect</h3>
+  <ul>
+    <li>Your name, email address, phone number, or any account or login details (the App has no accounts)</li>
+    <li>Your contacts, photos, camera or microphone input</li>
+    <li>Payment card, UPI or bank details (all payments are handled by Google Play or the Apple App Store)</li>
+    <li>Your device location on our servers. Location is used only on your device to find your nearest city (see <a href="#location">Location</a>)</li>
+  </ul>
+</section>
 
-    <table class="data-table" aria-label="Data collection summary">
-      <thead>
-        <tr>
-          <th>Data type</th>
-          <th>Why</th>
-          <th>Handled by</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Data type">Device or other identifiers: Android Advertising ID, and random app-installation identifiers</td>
-          <td data-label="Why">Showing ads, measuring ads, analytics, fraud prevention, keeping the App working</td>
-          <td data-label="Handled by">Google AdMob, Firebase</td>
-        </tr>
-        <tr>
-          <td data-label="Data type">Approximate location (derived from your IP address by these services)</td>
-          <td data-label="Why">Ads, analytics, fraud prevention</td>
-          <td data-label="Handled by">Google AdMob, Firebase</td>
-        </tr>
-        <tr>
-          <td data-label="Data type">App interactions (screens viewed, features used)</td>
-          <td data-label="Why">Understanding which features are used so we can improve them; ad measurement</td>
-          <td data-label="Handled by">Firebase Analytics, Google AdMob</td>
-        </tr>
-        <tr>
-          <td data-label="Data type">Device and diagnostic information (device model, OS version, app version, language, time zone, performance data)</td>
-          <td data-label="Why">App functionality, analytics, fraud prevention</td>
-          <td data-label="Handled by">Firebase, Google AdMob</td>
-        </tr>
-        <tr>
-          <td data-label="Data type">Crash reports (stack traces, device state at the time of a crash)</td>
-          <td data-label="Why">Finding and fixing crashes</td>
-          <td data-label="Handled by">Firebase Crashlytics</td>
-        </tr>
-        <tr>
-          <td data-label="Data type">Purchase history (which plan or item you bought, subscription status) and an anonymous customer ID</td>
-          <td data-label="Why">Unlocking what you bought and keeping it after reinstall; purchase analytics</td>
-          <td data-label="Handled by">RevenueCat, Google Play Billing, Firebase Analytics</td>
-        </tr>
-        <tr>
-          <td data-label="Data type">Remote configuration values</td>
-          <td data-label="Why">Turning features on or off without an app update</td>
-          <td data-label="Handled by">Firebase Remote Config</td>
-        </tr>
-      </tbody>
-    </table>
+<section id="device">
+  <h2>📱 Data Kept on Your Device</h2>
+  <p>The following stay on your device and are not sent to us or to our servers:</p>
+  <ul>
+    <li><strong>Jathagam and family profiles</strong> <span class="platform">Android only</span>: the names, birth dates, birth times and birth places you enter, and the charts calculated from them.</li>
+    <li>Bookmarks, favourites, reminders and notification preferences.</li>
+    <li>Your chosen city and app settings.</li>
+  </ul>
+  <p>If Android backup or iCloud Backup is turned on for your device, your device may include the App's local data in that backup. That copy is held by Google or Apple under your account, not by us. You can delete a profile inside the App at any time, or turn off backup in your device settings.</p>
+</section>
 
-    <h3>Data We Do NOT Collect</h3>
-    <ul>
-      <li>Your name, email address, phone number, or any account or login details (the App has no accounts)</li>
-      <li>Your contacts, photos, camera or microphone input</li>
-      <li>Payment card or bank details (all payments are handled by Google Play)</li>
-      <li>Precise (GPS-level) location or background location. The App does not request either</li>
-    </ul>
-  </section>
+<section id="location">
+  <h2>📍 Location</h2>
+  <p>The App may ask for your location so that it can use your nearest city for these features:</p>
+  <ul>
+    <li>Sunrise and sunset times</li>
+    <li>Panchangam (Tithi, Nakshatra, Yoga, Karana) calculations</li>
+    <li>Rahu Kalam and Yamagandam timings</li>
+    <li>Nalla Neram (auspicious time) display</li>
+  </ul>
+  <p><strong>Android:</strong> the App asks only for approximate (coarse) location (ACCESS_COARSE_LOCATION). It does not request precise (GPS-level) or background location. You can change this at any time in Settings → Apps → Vetri Tamil Calendar → Permissions.</p>
+  <p><strong>iOS:</strong> the App asks for location access while you are using it. You can choose not to share Precise Location, or change or remove access at any time, in Settings → Vetri Tamil Calendar → Location.</p>
+  <div class="note">Location permission is optional. If you say no, you can choose a city yourself.</div>
+  <p>The App does not send your device location to us. It is used on your device only to work out the calculations above. Separately, the advertising, analytics and crash-reporting services in the App receive your IP address when they connect, and may use it to work out your approximate location (such as your city or region). That is why approximate location is listed in the table above.</p>
+</section>
 
-  <section id="on-device">
-    <h2><span class="icon">📱</span> Data Kept on Your Device</h2>
-    <p>The following stay on your device and are not sent to us or to our servers:</p>
-    <ul>
-      <li>
-        <strong>Jathagam and family profiles.</strong> The names, birth dates, birth times and
-        birth places you enter, and the charts calculated from them.
-      </li>
-      <li>Bookmarks, favourites, reminders and notification preferences.</li>
-      <li>Your chosen city and app settings.</li>
-    </ul>
-    <p>
-      If Android backup is turned on for your device, Android may include the App's local data in
-      your Google backup. That copy is held by Google under your Google account, not by us. You
-      can delete a profile inside the App at any time, or turn off backup in your device's
-      Google settings.
-    </p>
-  </section>
+<section id="analytics">
+  <h2>📈 Analytics &amp; Diagnostics</h2>
+  <h3>Firebase Analytics (Google LLC)</h3>
+  <p>We use Firebase Analytics to understand how the App is used, for example which screens are opened and which features are used. It uses a random app-instance identifier and may record device type, operating system version, app version, language, approximate location derived from IP address, session information and in-app events. It also records purchase-related events (for example that a subscription or, on Android, a Jathagam slot was bought) so that we can see how paid features perform.</p>
+  <p>Firebase privacy information: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></p>
+  <h3>Firebase Crashlytics (Google LLC)</h3>
+  <p>Crashlytics records app crashes and errors. A report contains a stack trace, device model, OS version, app version, the state of the device at the time, and a randomly generated installation identifier. We use it only to find and fix bugs. It does not contain your name or email.</p>
+  <h3>Firebase Remote Config</h3>
+  <p>Remote Config lets us change app behaviour (for example switching a feature off) without an update. It uses the standard Firebase installation identifier.</p>
+</section>
 
-  <section id="location">
-    <h2><span class="icon">📍</span> Location</h2>
-    <p>
-      The App may ask for <strong>approximate (coarse) location</strong>
-      (<code>ACCESS_COARSE_LOCATION</code>) so that it can use your nearest city for these
-      features:
-    </p>
-    <ul>
-      <li>Sunrise and sunset times</li>
-      <li>Panchangam (Tithi, Nakshatra, Yoga, Karana) calculations</li>
-      <li>Rahu Kalam and Yamagandam timings</li>
-      <li>Nalla Neram (auspicious time) display</li>
-    </ul>
-    <div class="highlight">
-      <strong>Location permission is optional.</strong> If you say no, you can choose a city
-      yourself. You can change this at any time in your device's Settings → Apps →
-      Vetri Tamil Calendar → Permissions.
-    </div>
-    <p>
-      The App does not send your device location to us. It is used on your device to work out the
-      calculations above. Separately, the advertising, analytics and crash-reporting services in
-      the App receive your IP address when they connect, and may use it to work out your
-      approximate location (such as your city or region). That is why approximate location is
-      listed in the table above.
-    </p>
-  </section>
+<section id="ads">
+  <h2>📣 Advertising &amp; Your Choices</h2>
+  <p>The App shows ads from Google AdMob (Google LLC) to users who have not bought an ad-free plan. To show and measure ads and to prevent fraud, AdMob may use your device's advertising identifier (the Android Advertising ID, or on iOS the IDFA if you allow tracking), your IP address, device information (model, OS, language, time zone) and information about how you interact with ads (impressions and clicks). Depending on your choices, the ads may be personalised or non-personalised.</p>
+  <p>We currently use Google AdMob only. If we add another ad network in future, we will update this policy and the store privacy information before the change goes live.</p>
+  <h3>Your advertising choices</h3>
+  <ul>
+    <li><strong>iOS tracking permission:</strong> on iPhone, Apple's App Tracking Transparency prompt asks for your permission before the IDFA can be used. If you choose "Ask App Not to Track", the IDFA is not used and ads are not personalised with it. You can change this at any time in Settings → Privacy &amp; Security → Tracking.</li>
+    <li><strong>Consent form:</strong> where the law requires it (for example in the European Economic Area and the UK), the App shows Google's consent form (User Messaging Platform) before ads are loaded. You can review or change your choice at any time in the App under Settings → Privacy options. This row only appears in regions where consent is required.</li>
+    <li><strong>Android:</strong> to opt out of personalised ads, or to reset or delete your Advertising ID, go to Settings → Google → Ads on your device.</li>
+    <li><strong>Remove ads entirely</strong> by buying an ad-free plan (see <a href="#purchases">Purchases &amp; Billing</a>).</li>
+  </ul>
+  <p>Google's privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></p>
+</section>
 
-  <section id="analytics">
-    <h2><span class="icon">📈</span> Analytics &amp; Diagnostics</h2>
+<section id="purchases">
+  <h2>💳 Purchases &amp; Billing</h2>
+  <p>The App offers optional paid features: ad-free subscriptions (monthly and yearly) and a lifetime option. On Android, it also offers extra Jathagam profile slots and Jathagam plan benefits. The plans on offer, their prices and any free-trial offer are shown in the App and in the store before you buy.</p>
 
-    <h3>Firebase Analytics (Google LLC)</h3>
-    <p>
-      We use Firebase Analytics to understand how the App is used, for example which screens are
-      opened and which features are used. It uses a random app-instance identifier and may record
-      device type, operating system version, app version, language, approximate location derived
-      from IP address, session information and in-app events. It also records purchase-related
-      events (for example that a subscription or a Jathagam slot was bought) so that we can see
-      how paid features perform.
-    </p>
-    <p>
-      Firebase privacy information:
-      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">firebase.google.com/support/privacy</a>
-    </p>
+  <h3>Google Play Billing <span class="platform">Android</span></h3>
+  <p>On Android, all purchases are made through Google Play Billing. We do not receive or store your card or UPI details; Google handles them under Google Play's terms. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. To cancel: open the Google Play Store app → profile icon → Payments &amp; subscriptions → Subscriptions → Vetri Tamil Calendar → Cancel.</p>
 
-    <h3>Firebase Crashlytics (Google LLC)</h3>
-    <p>
-      Crashlytics records app crashes and errors. A report contains a stack trace, device model,
-      OS version, app version, the state of the device at the time, and a randomly generated
-      installation identifier. We use it only to find and fix bugs. It does not contain your name
-      or email.
-    </p>
+  <h3>Apple App Store <span class="platform">iOS</span></h3>
+  <p>On iOS, all purchases are made with your Apple Account through the App Store. We do not receive or store your payment details; Apple handles them under its own terms. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. Your Apple Account is charged at confirmation of purchase. To cancel: open Settings on your iPhone → your name → Subscriptions → Vetri Tamil Calendar → Cancel Subscription.</p>
 
-    <h3>Firebase Remote Config</h3>
-    <p>
-      Remote Config lets us change app behaviour (for example switching a feature off) without an
-      update. It uses the standard Firebase installation identifier.
-    </p>
-  </section>
+  <h3>RevenueCat</h3>
+  <p>We use RevenueCat to check and manage what you have purchased. RevenueCat receives the purchase information from Google Play or the App Store and an anonymous customer identifier created by its SDK. It does not receive your Google or Apple account name or your payment details. The anonymous identifier allows the App to restore your purchases after a reinstall or on a new device signed in to the same Google Play or Apple account, without a separate sign-in.</p>
+  <p>RevenueCat privacy policy: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></p>
 
-  <section id="advertising">
-    <h2><span class="icon">📣</span> Advertising &amp; Your Choices</h2>
-    <p>
-      The App shows ads from <strong>Google AdMob</strong> (Google LLC) to users who have not
-      bought an ad-free plan. To show and measure ads and to prevent fraud, AdMob may use the
-      Android Advertising ID, your IP address, device information (model, OS, language, time
-      zone) and information about how you interact with ads (impressions and clicks). Depending
-      on your choices, the ads may be personalised or non-personalised.
-    </p>
-    <p>
-      We currently use Google AdMob only. If we add another ad network in future, we will update
-      this policy and the Google Play Data safety information before the change goes live.
-    </p>
+  <h3>Refunds</h3>
+  <p>Refunds are handled by the store you bought from. We cannot process refunds ourselves.</p>
+  <ul>
+    <li><strong>Android:</strong> request a refund from your Google Play order history.</li>
+    <li><strong>iOS:</strong> request a refund from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
+  </ul>
+  <p>If you need help, contact us and we will point you in the right direction.</p>
+</section>
 
-    <h3>Your advertising choices</h3>
-    <ul>
-      <li>
-        <strong>Consent form:</strong> where the law requires it (for example in the European
-        Economic Area and the UK), the App shows Google's consent form (User Messaging Platform)
-        before ads are loaded. You can review or change your choice at any time in the App under
-        <strong>Settings → Privacy options</strong>. This row only appears in regions where
-        consent is required.
-      </li>
-      <li>
-        <strong>Opt out of personalised ads:</strong> on your device, go to Settings → Google →
-        Ads → "Opt out of Ads Personalization".
-      </li>
-      <li>
-        <strong>Reset or delete your Advertising ID:</strong> in the same Settings → Google →
-        Ads menu.
-      </li>
-      <li>
-        <strong>Remove ads entirely</strong> by buying an ad-free plan (see
-        <a href="#subscriptions">Purchases &amp; Billing</a>).
-      </li>
-    </ul>
-    <p>
-      Google's privacy policy:
-      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>
-    </p>
-  </section>
+<section id="network">
+  <h2>🌐 Other Network Requests</h2>
+  <p>To provide content, the App connects to some other services over HTTPS. Like any internet connection, these services can see your IP address and basic request details such as the type of device. We do not send them your name, your birth details or your profiles.</p>
+  <ul>
+    <li><strong>Google Cloud Firestore (Google LLC):</strong> the App reads festival and other content that we publish. It is read-only; the App does not write your data to it.</li>
+    <li><strong>OpenStreetMap tile servers:</strong> used to display map images where the App shows a map for choosing a place.</li>
+    <li><strong>Public rate services:</strong> used to fetch gold, silver and currency rates for the rates screen.</li>
+  </ul>
+</section>
 
-  <section id="subscriptions">
-    <h2><span class="icon">💳</span> Purchases &amp; Billing</h2>
-    <p>
-      The App offers optional paid features: ad-free subscriptions (monthly and annual), a
-      lifetime option, and extra Jathagam profile slots. The plans on offer, their prices and any
-      free-trial offer are shown in the App and in Google Play before you buy.
-    </p>
+<section id="third-party">
+  <h2>🔗 Third-Party Services</h2>
+  <p>The App uses the following third-party services. Each operates under its own privacy policy, which we encourage you to read.</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Privacy policy</th></tr></thead>
+    <tbody>
+      <tr><td>Google AdMob</td><td>Google LLC</td><td>Advertising</td><td><a href="https://policies.google.com/privacy">Link</a></td></tr>
+      <tr><td>Google User Messaging Platform</td><td>Google LLC</td><td>Ad consent choices</td><td><a href="https://policies.google.com/privacy">Link</a></td></tr>
+      <tr><td>Firebase Analytics</td><td>Google LLC</td><td>Usage analytics</td><td><a href="https://firebase.google.com/support/privacy">Link</a></td></tr>
+      <tr><td>Firebase Crashlytics</td><td>Google LLC</td><td>Crash reporting</td><td><a href="https://firebase.google.com/support/privacy">Link</a></td></tr>
+      <tr><td>Firebase Remote Config</td><td>Google LLC</td><td>Feature configuration</td><td><a href="https://firebase.google.com/support/privacy">Link</a></td></tr>
+      <tr><td>Cloud Firestore</td><td>Google LLC</td><td>Content delivery (read-only)</td><td><a href="https://firebase.google.com/support/privacy">Link</a></td></tr>
+      <tr><td>Google Play Billing</td><td>Google LLC</td><td>In-app purchases (Android)</td><td><a href="https://policies.google.com/privacy">Link</a></td></tr>
+      <tr><td>Apple App Store (StoreKit)</td><td>Apple Inc.</td><td>In-app purchases (iOS)</td><td><a href="https://www.apple.com/legal/privacy/">Link</a></td></tr>
+      <tr><td>RevenueCat</td><td>RevenueCat, Inc.</td><td>Purchase management</td><td><a href="https://www.revenuecat.com/privacy">Link</a></td></tr>
+      <tr><td>OpenStreetMap tiles</td><td>OpenStreetMap Foundation</td><td>Map images</td><td><a href="https://osmfoundation.org/wiki/Privacy_Policy">Link</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
 
-    <h3>Google Play Billing</h3>
-    <p>
-      All purchases are made through <strong>Google Play Billing</strong>. We do not receive or
-      store your card or UPI details; Google handles them under Google Play's terms.
-      Subscriptions renew automatically unless cancelled at least 24 hours before the end of the
-      current period. To cancel: open the Google Play Store app → profile icon → Payments &amp;
-      subscriptions → Subscriptions → Vetri Tamil Calendar → Cancel.
-    </p>
+<section id="sharing">
+  <h2>🤝 Data Sharing &amp; Disclosure</h2>
+  <p>We do not sell your personal information for money, and we do not rent or trade it.</p>
+  <p>Data is shared only in these limited ways:</p>
+  <ul>
+    <li><strong>Service providers:</strong> as described above, identifiers, approximate location, app interactions and diagnostics flow to Google (AdMob, Firebase), and purchase information flows to RevenueCat and to Google Play or Apple, so that the App can show ads, measure usage, prevent fraud and unlock paid features.</li>
+    <li><strong>Advertising:</strong> data used for ads (such as the advertising identifier and approximate location) is shared with Google AdMob for advertising and measurement. Some privacy laws treat this as "sharing" for advertising. See <a href="#ads">Advertising &amp; Your Choices</a> to limit it.</li>
+    <li><strong>Legal compliance:</strong> we may disclose information if required by law or to protect the rights and safety of users or the public.</li>
+    <li><strong>Business transfer:</strong> if the App is acquired or merged, data may be transferred as part of that transaction, and we will tell users through an updated policy or an in-app notice.</li>
+  </ul>
+</section>
 
-    <h3>RevenueCat</h3>
-    <p>
-      We use <strong>RevenueCat</strong> to check and manage what you have purchased. RevenueCat
-      receives the purchase information from Google Play and an anonymous customer identifier
-      created by its SDK. It does not receive your Google account name or your payment details.
-      The anonymous identifier allows the App to restore your purchases after a reinstall or on a
-      new device signed in to the same Google Play account, without a separate sign-in.
-    </p>
-    <p>
-      RevenueCat privacy policy:
-      <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">revenuecat.com/privacy</a>
-    </p>
+<section id="security">
+  <h2>🔒 Data Security</h2>
+  <ul>
+    <li>All network communication from the App uses HTTPS / TLS encryption.</li>
+    <li>Your settings, and on Android your Jathagam profiles, are stored locally in storage that is private to the App on your device.</li>
+    <li>Firebase, Google, Apple and RevenueCat apply their own security controls.</li>
+    <li>We do not store financial data. All payments are handled by Google Play or the Apple App Store.</li>
+  </ul>
+  <p>We use reasonable measures to protect your information, but no method of storage or transmission is completely secure, so we cannot guarantee absolute security.</p>
+</section>
 
-    <h3>Refunds</h3>
-    <p>
-      Refunds are handled by Google Play. We cannot process refunds ourselves, because billing is
-      managed by Google. Request a refund from your Google Play order history, or contact us and
-      we will point you in the right direction.
-    </p>
-  </section>
+<section id="rights">
+  <h2>⚖️ Your Rights &amp; Deleting Data</h2>
+  <p>Depending on where you live, you may have the following rights:</p>
+  <ul>
+    <li><strong>Access:</strong> ask what information we hold that relates to you.</li>
+    <li><strong>Deletion:</strong> ask us to delete data linked to your device or purchases.</li>
+    <li><strong>Control of advertising:</strong> through the consent form, Settings → Privacy options, and your device settings (Settings → Google → Ads on Android; Settings → Privacy &amp; Security → Tracking on iPhone).</li>
+    <li><strong>Location:</strong> withdraw the location permission at any time in your device settings.</li>
+  </ul>
+  <h3>How to delete your data</h3>
+  <ul>
+    <li>Data kept on your device (settings, reminders, and on Android your Jathagam profiles) is removed when you delete it in the App or uninstall the App. Device backups are controlled from your Google or Apple account settings.</li>
+    <li>To reset the advertising identifier, use Settings → Google → Ads on Android. On iPhone, turn off tracking for the App in Settings → Privacy &amp; Security → Tracking.</li>
+    <li>To ask us to delete data held by our service providers (for example analytics or purchase records linked to your anonymous ID), email us at <a href="mailto:aara.apps.support@gmail.com">aara.apps.support@gmail.com</a>. We will reply within 30 days. Data that only Google, Apple or RevenueCat holds may have to be requested from them directly, and we will help you do that.</li>
+  </ul>
 
-  <section id="network">
-    <h2><span class="icon">🌐</span> Other Network Requests</h2>
-    <p>
-      To provide content, the App connects to some other services over HTTPS. Like any internet
-      connection, these services can see your IP address and basic request details such as the
-      type of device. We do not send them your name, your birth details or your profiles.
-    </p>
-    <ul>
-      <li>
-        <strong>Google Cloud Firestore</strong> (Google LLC): the App reads festival and other
-        content that we publish. It is read-only; the App does not write your data to it.
-      </li>
-      <li>
-        <strong>OpenStreetMap tile servers</strong>: used to display map images where the App
-        shows a map for choosing a place.
-      </li>
-      <li>
-        <strong>Public rate services</strong>: used to fetch gold, silver and currency rates for
-        the rates screen.
-      </li>
-    </ul>
-  </section>
+  <h3>California residents (CCPA/CPRA)</h3>
+  <p>If you live in California, you can ask to know what personal information we collect, to delete it, and to opt out of its sale or sharing. We do not sell personal information for money. Advertising identifiers shared with Google AdMob may count as "sharing" for cross-context advertising; you can limit this through your device ad or tracking settings and, where shown, Settings → Privacy options. To make a request, contact us using the details in <a href="#contact">Contact Us</a>.</p>
 
-  <section id="third-party">
-    <h2><span class="icon">🔗</span> Third-Party Services</h2>
-    <p>
-      The App uses the following third-party services. Each operates under its own privacy
-      policy, which we encourage you to read.
-    </p>
+  <h3>European Economic Area and UK residents (GDPR / UK GDPR)</h3>
+  <p>Where consent is required for advertising, we ask for it through Google's consent form and you can withdraw it at any time under Settings → Privacy options. We process crash and diagnostic data on the basis of our legitimate interest in keeping the App stable. You have the right to access, correct, delete, restrict or object to the processing of your data, and to complain to your local data protection authority. Contact us to exercise these rights.</p>
+</section>
 
-    <table class="data-table" aria-label="Third-party services">
-      <thead>
-        <tr>
-          <th>Service</th>
-          <th>Provider</th>
-          <th>Purpose</th>
-          <th>Privacy policy</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Service">Google AdMob</td>
-          <td data-label="Provider">Google LLC</td>
-          <td data-label="Purpose">Advertising</td>
-          <td data-label="Privacy policy"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Link</a></td>
-        </tr>
-        <tr>
-          <td data-label="Service">Google User Messaging Platform</td>
-          <td data-label="Provider">Google LLC</td>
-          <td data-label="Purpose">Ad consent choices</td>
-          <td data-label="Privacy policy"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Link</a></td>
-        </tr>
-        <tr>
-          <td data-label="Service">Firebase Analytics</td>
-          <td data-label="Provider">Google LLC</td>
-          <td data-label="Purpose">Usage analytics</td>
-          <td data-label="Privacy policy"><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Link</a></td>
-        </tr>
-        <tr>
-          <td data-label="Service">Firebase Crashlytics</td>
-          <td data-label="Provider">Google LLC</td>
-          <td data-label="Purpose">Crash reporting</td>
-          <td data-label="Privacy policy"><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Link</a></td>
-        </tr>
-        <tr>
-          <td data-label="Service">Firebase Remote Config</td>
-          <td data-label="Provider">Google LLC</td>
-          <td data-label="Purpose">Feature configuration</td>
-          <td data-label="Privacy policy"><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Link</a></td>
-        </tr>
-        <tr>
-          <td data-label="Service">Cloud Firestore</td>
-          <td data-label="Provider">Google LLC</td>
-          <td data-label="Purpose">Content delivery (read-only)</td>
-          <td data-label="Privacy policy"><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Link</a></td>
-        </tr>
-        <tr>
-          <td data-label="Service">Google Play Billing</td>
-          <td data-label="Provider">Google LLC</td>
-          <td data-label="Purpose">In-app purchases</td>
-          <td data-label="Privacy policy"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Link</a></td>
-        </tr>
-        <tr>
-          <td data-label="Service">RevenueCat</td>
-          <td data-label="Provider">RevenueCat, Inc.</td>
-          <td data-label="Purpose">Purchase management</td>
-          <td data-label="Privacy policy"><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Link</a></td>
-        </tr>
-        <tr>
-          <td data-label="Service">OpenStreetMap tiles</td>
-          <td data-label="Provider">OpenStreetMap Foundation</td>
-          <td data-label="Purpose">Map images</td>
-          <td data-label="Privacy policy"><a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener noreferrer">Link</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+<section id="children">
+  <h2>👶 Children's Privacy</h2>
+  <p>Vetri Tamil Calendar is not directed to children under 13 (or under 16 where local law sets a higher age). We do not knowingly collect personal information from children. If you believe a child has provided information through the App, email <a href="mailto:aara.apps.support@gmail.com">aara.apps.support@gmail.com</a> and we will take steps to remove it.</p>
+</section>
 
-  <section id="data-sharing">
-    <h2><span class="icon">🤝</span> Data Sharing &amp; Disclosure</h2>
-    <p>We do not sell your personal information for money, and we do not rent or trade it.</p>
-    <p>Data is shared only in these limited ways:</p>
-    <ul>
-      <li>
-        <strong>Service providers:</strong> as described above, identifiers, approximate
-        location, app interactions and diagnostics flow to Google (AdMob, Firebase) and
-        purchase information flows to RevenueCat and Google Play, so that the App can show ads,
-        measure usage, prevent fraud and unlock paid features.
-      </li>
-      <li>
-        <strong>Advertising:</strong> data used for ads (such as the Advertising ID and
-        approximate location) is shared with Google AdMob for advertising and measurement. Some
-        privacy laws treat this as "sharing" for advertising. See
-        <a href="#advertising">Advertising &amp; Your Choices</a> to limit it.
-      </li>
-      <li>
-        <strong>Legal compliance:</strong> we may disclose information if required by law or to
-        protect the rights and safety of users or the public.
-      </li>
-      <li>
-        <strong>Business transfer:</strong> if the App is acquired or merged, data may be
-        transferred as part of that transaction, and we will tell users through an updated policy
-        or an in-app notice.
-      </li>
-    </ul>
-  </section>
+<section id="changes">
+  <h2>🔄 Changes to This Policy</h2>
+  <p>We may update this policy when the App's features, the law or the services we use change. When we make material changes we will:</p>
+  <ul>
+    <li>Update the "Last Updated" date at the top of this page.</li>
+    <li>Where the change affects what you have agreed to, tell you in the App.</li>
+  </ul>
+  <p>Please review this page from time to time. Continuing to use the App after a change means you accept the updated policy.</p>
+</section>
 
-  <section id="data-security">
-    <h2><span class="icon">🔒</span> Data Security</h2>
-    <ul>
-      <li>All network communication from the App uses HTTPS / TLS encryption.</li>
-      <li>Your Jathagam profiles and settings are stored locally in storage that is private to the App on your device.</li>
-      <li>Firebase, Google and RevenueCat apply their own security controls.</li>
-      <li>We do not store financial data. All payments are handled by Google Play.</li>
-    </ul>
-    <p>
-      We use reasonable measures to protect your information, but no method of storage or
-      transmission is completely secure, so we cannot guarantee absolute security.
-    </p>
-  </section>
-
-  <section id="user-rights">
-    <h2><span class="icon">⚖️</span> Your Rights &amp; Deleting Data</h2>
-    <p>Depending on where you live, you may have the following rights:</p>
-    <ul>
-      <li><strong>Access:</strong> ask what information we hold that relates to you.</li>
-      <li><strong>Deletion:</strong> ask us to delete data linked to your device or purchases.</li>
-      <li><strong>Control of advertising:</strong> through the consent form, <strong>Settings → Privacy options</strong>, and your device's Google ad settings.</li>
-      <li><strong>Location:</strong> withdraw the location permission at any time in device settings.</li>
-    </ul>
-    <p>
-      How to delete your data, step by step, is on our
-      <a href="delete-data/">Data deletion page</a>. You can also email us at
-      <a href="mailto:aara.apps.support@gmail.com">aara.apps.support@gmail.com</a>. We will reply
-      within 30 days. Data that only Google or RevenueCat holds may have to be requested from
-      them directly, and we will help you do that.
-    </p>
-
-    <h3>California residents (CCPA/CPRA)</h3>
-    <p>
-      If you live in California, you can ask to know what personal information we collect, to
-      delete it, and to opt out of its sale or sharing. We do not sell personal information for
-      money. Advertising identifiers shared with Google AdMob may count as "sharing" for
-      cross-context advertising; you can limit this through your device ad settings and, where
-      shown, <strong>Settings → Privacy options</strong>. To make a request, contact us using the
-      details in <a href="#contact">Contact Us</a>.
-    </p>
-
-    <h3>European Economic Area and UK residents (GDPR / UK GDPR)</h3>
-    <p>
-      Where consent is required for advertising, we ask for it through Google's consent form and
-      you can withdraw it at any time under <strong>Settings → Privacy options</strong>. We
-      process crash and diagnostic data on the basis of our legitimate interest in keeping the App
-      stable. You have the right to access, correct, delete, restrict or object to the processing
-      of your data, and to complain to your local data protection authority. Contact us to
-      exercise these rights.
-    </p>
-  </section>
-
-  <section id="children">
-    <h2><span class="icon">👶</span> Children's Privacy</h2>
-    <p>
-      Vetri Tamil Calendar is <strong>not directed to children under 13</strong> (or under 16
-      where local law sets a higher age). We do not knowingly collect personal information from
-      children. If you believe a child has provided information through the App, email
-      <a href="mailto:aara.apps.support@gmail.com">aara.apps.support@gmail.com</a> and we will
-      take steps to remove it.
-    </p>
-  </section>
-
-  <section id="changes">
-    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
-    <p>
-      We may update this policy when the App's features, the law or the services we use change.
-      When we make material changes we will:
-    </p>
-    <ul>
-      <li>Update the "Last Updated" date at the top of this page.</li>
-      <li>Where the change affects what you have agreed to, tell you in the App.</li>
-    </ul>
-    <p>
-      Please review this page from time to time. Continuing to use the App after a change means
-      you accept the updated policy.
-    </p>
-  </section>
-
-  <section id="contact">
-    <h2><span class="icon">✉️</span> Contact Us</h2>
-    <p>If you have questions about this Privacy Policy or want to use your rights, contact:</p>
-
-    <div class="contact-card">
-      <div class="icon">🕉</div>
-      <div>
-        <strong>AARA Apps</strong><br />
-        Developer of Vetri Tamil Calendar<br />
-        Email: <a href="mailto:aara.apps.support@gmail.com">aara.apps.support@gmail.com</a>
-      </div>
-    </div>
-
-    <p style="margin-top:20px; font-size:0.9rem; color:var(--muted);">
-      We aim to respond to all privacy enquiries within <strong>30 days</strong>.
-    </p>
-  </section>
-
-</main>
+<section id="contact">
+  <h2>✉️ Contact Us</h2>
+  <p>If you have questions about this Privacy Policy or want to use your rights, contact:</p>
+  <p><strong>AARA Apps</strong><br>
+  Developer of Vetri Tamil Calendar<br>
+  Email: <a href="mailto:aara.apps.support@gmail.com">aara.apps.support@gmail.com</a></p>
+  <p>We aim to respond to all privacy enquiries within 30 days.</p>
+</section>
 
 <footer>
-  <p>&copy; 2026 AARA Apps. All rights reserved.</p>
-  <p style="margin-top:8px;">
-    Vetri Tamil Calendar &nbsp;·&nbsp;
-    <a href="delete-data/">Data deletion</a> &nbsp;·&nbsp;
-    <a href="mailto:aara.apps.support@gmail.com">aara.apps.support@gmail.com</a>
-  </p>
+  <p>🕉 © 2026 AARA Apps</p>
 </footer>
 
+</div>
 </body>
 </html>
